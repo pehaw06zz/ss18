@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let toan=Number(prompt("Nhap diem Toan"));
+        let van=Number(prompt("Nhap dien van"));
+        let anh=Number(prompt("Nhap diem anh"));
+        let dtb= (toan+van+anh)/3;
+        if(dtb>=8){
+            console.log("Gioi");
+        }else if(dtb >=6.5&&dtb<=7.9){
+            console.log("Kha");
+        }else if(dtb >=5 && dtb <=6.4){
+            console.log("Trung Binh");
+        } else{
+            console.log("Yeu");
+        }
+
+        
+    </script>
+</body>
+</html>

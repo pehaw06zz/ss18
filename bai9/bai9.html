@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+let h = +prompt("Nhập giờ (0-23):");
+let m = +prompt("Nhập phút (0-59):");
+let s = +prompt("Nhập giây (0-59):");
+if (h >= 0 && h < 24 && m >= 0 && m < 60 && s >= 0 && s < 60) {
+    let period = h >= 12 ? "PM" : "AM";
+    let h12 = h % 12 || 12;
+    alert(`Thời gian 12 giờ: ${h12}:${m.toString().padStart(2, "0")}:${s.toString().padStart(2, "0")} ${period}`);
+} else {
+    alert("Thời gian không hợp lệ!");
+}
+
+    </script>
+</body>
+</html>
